@@ -3,22 +3,18 @@ In here there are scripts that allow full bi-directional communication between a
 
 
 # mqtt_publisher.py
-# -----------------
 This script uses device credentials to publish events to the MQTT broker residing in Google Cloud.
 Using this code a device can 'talk' to the server.
 
 # mqtt_state_subscriber.py
-# -----------------
 This script uses device credentials to subscribe to the device configuration topic of the MQTT broker residing in Google Cloud.
 Using this code a device can receive configuration from the server.
 
 # pubsub_subscriber.py
-# -----------------
 This script uses service credentials to subscribe to a topic of the Pub/Sub broker residing in Google Cloud.
 Using this code a server can receive messages from the device.
 
 # set_device_configuration.py
-# -----------------
 This script uses service credentials to modify device configuration over REST API of Google Cloud.
 Using this code a server can change the configuration of the device.
 
