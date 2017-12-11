@@ -57,7 +57,5 @@ def get_client():
 
 body = {"versionToUpdate": "0", "binaryData": base64.urlsafe_b64encode(configuration_payload)}
 
-config_data_json = json.dumps("crap")
-
 print get_client().projects().locations().registries().devices().modifyCloudToDeviceConfig(name=device_name,
                                                                                            body=body).execute()
